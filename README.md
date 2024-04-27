@@ -8,7 +8,7 @@ https://github.com/goncaloffs/itk_encephalon_segmentation/assets/168077924/940b0
 
 ## Description
 
-After the manual segmentation of different encephalic regions of the BraVa dataset (cng.gmu.edu/brava) using ITK-Snap, the following methods were applied to the obtained vtk file:
+After the manual segmentation of different encephalic regions (Brain, Cerebelum, Callosum, Fornix, Thalamus, Midbrain, Pons, Medulla, Lateral Ventricles, 3rd Ventricle and 4th Ventricle) of the BraVa dataset (cng.gmu.edu/brava) using ITK-Snap, the following methods were applied to the obtained vtk file:
 
 ### Surface meshes creation
 - Threeshold: recognizes each segmented structure individually depending of the chosen limit value, defining a neighborhood of pixels to be considered in the subsequent operations;
@@ -38,6 +38,6 @@ After the manual segmentation of different encephalic regions of the BraVa datas
 
 ## Your approach
 
-I am making available my own segmentation files and the used code files (on a more simpler way).
+I am making available my own segmentation files and the used python code files (on a more simpler way).
 Try to use your own .vtk segmentation file, I hope my code helps you!!
 
