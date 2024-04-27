@@ -8,15 +8,16 @@ import vtk
 from vtkmodules.vtkInteractionWidgets import vtkCameraOrientationWidget
 from vtk import vtkFillHolesFilter
 
+#Remember to unzip the .vtk file!
 dataset = 'BH0018'
-inputFilename = '../input/%s_MAN_labels.vtk' % dataset
+inputFilename = 'input/%s_MAN_labels.vtk' % dataset
 
 displayNames = ['Brain', 'Cerebelum', 'Callosum', 'Fornix', 'Thalamus', 'Midbrain',
                 'Pons', 'Medulla', 'Lateral Ventricles', '3rd Ventricle', '4th Ventricle']
 
 color_mapping = {
-    '../output/%s_label1_mask.vtk' % dataset: (1.0, 0.0, 0.0),      # Cerebrum -> red
-    '../output/%s_label2_mask.vtk' % dataset: (0.0, 1.0, 0.0),      # Cerebellum -> green
+    'output/%s_label1_mask.vtk' % dataset: (1.0, 0.0, 0.0),      # Cerebrum -> red
+    'output/%s_label2_mask.vtk' % dataset: (0.0, 1.0, 0.0),      # Cerebellum -> green
     '../output/%s_label4_mask.vtk' % dataset: (1.0, 1.0, 0.0),      # Callosum -> yellow
     '../output/%s_label5_mask.vtk' % dataset: (0.0, 1.0, 1.0),      # Fornix -> light blue
     '../output/%s_label6_mask.vtk' % dataset: (1.0, 0.0, 1.0),      # Thalamus -> pink
