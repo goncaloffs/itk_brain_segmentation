@@ -9,25 +9,26 @@ import tkinter as tk
 from tkinter import ttk
 from vtkmodules.vtkInteractionWidgets import vtkCameraOrientationWidget
 
+#Remember to unzip the dataset file
 dataset = 'BH0018'
-inputFilename = '../input/%s_MAN_labels.vtk' % dataset
+inputFilename = 'input/%s_MAN_labels.vtk' % dataset
 
 displayNames = ['Brain', 'Cerebelum', 'Callosum', 'Fornix', 'Thalamus', 'Midbrain',
                 'Pons', 'Medulla', 'Lateral Ventricles', '3rd Ventricle', '4th Ventricle']
 
 
 color_mapping = {
-    '../output/%s_label1_mask.vtk' % dataset: (1.0, 0.0, 0.0),      # Cerebrum -> red
-    '../output/%s_label2_mask.vtk' % dataset: (0.0, 1.0, 0.0),      # Cerebellum -> green
-    '../output/%s_label4_mask.vtk' % dataset: (1.0, 1.0, 0.0),      # Callosum -> yellow
-    '../output/%s_label5_mask.vtk' % dataset: (0.0, 1.0, 1.0),      # Fornix -> light blue
-    '../output/%s_label6_mask.vtk' % dataset: (1.0, 0.0, 1.0),      # Thalamus -> pink
-    '../output/%s_label7_mask.vtk' % dataset: (1.0, 0.584, 0.0),    # Midbrain -> orange
-    '../output/%s_label8_mask.vtk' % dataset: (0.71, 0.6, 0.459),   # Pons -> brown
-    '../output/%s_label9_mask.vtk' % dataset: (1.0, 0.937, 0.835),  # Medulla -> beige
-    '../output/%s_label10_mask.vtk' % dataset: (0.263, 0.761, 0.576),# Lateral Ventricles -> bluish green
-    '../output/%s_label11_mask.vtk' % dataset: (0.463, 0.584, 0.161),# 3rd Ventricle -> dark green
-    '../output/%s_label12_mask.vtk' % dataset: (1.0, 0.416, 0.592)   # 4th Ventricle-> light pink
+    'output/%s_label1_mask.vtk' % dataset: (1.0, 0.0, 0.0),      # Cerebrum -> red
+    'output/%s_label2_mask.vtk' % dataset: (0.0, 1.0, 0.0),      # Cerebellum -> green
+    'output/%s_label4_mask.vtk' % dataset: (1.0, 1.0, 0.0),      # Callosum -> yellow
+    'output/%s_label5_mask.vtk' % dataset: (0.0, 1.0, 1.0),      # Fornix -> light blue
+    'output/%s_label6_mask.vtk' % dataset: (1.0, 0.0, 1.0),      # Thalamus -> pink
+    'output/%s_label7_mask.vtk' % dataset: (1.0, 0.584, 0.0),    # Midbrain -> orange
+    'output/%s_label8_mask.vtk' % dataset: (0.71, 0.6, 0.459),   # Pons -> brown
+    'output/%s_label9_mask.vtk' % dataset: (1.0, 0.937, 0.835),  # Medulla -> beige
+    'output/%s_label10_mask.vtk' % dataset: (0.263, 0.761, 0.576),# Lateral Ventricles -> bluish green
+    'output/%s_label11_mask.vtk' % dataset: (0.463, 0.584, 0.161),# 3rd Ventricle -> dark green
+    'output/%s_label12_mask.vtk' % dataset: (1.0, 0.416, 0.592)   # 4th Ventricle-> light pink
 }
 
 def create_surface_mesh():
@@ -60,7 +61,7 @@ def create_surface_mesh():
         if label == 3:
             continue
         
-        labelOutputFilename = "../output/%s_label%d_mask.vtk" % (dataset, label)
+        labelOutputFilename = "output/%s_label%d_mask.vtk" % (dataset, label)
         mesh_files += [labelOutputFilename]
         
         if not os.path.exists(labelOutputFilename):
