@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-STRUCTURES SELECTION
+#STRUCTURES SELECTION
 
 import itk
 import os
