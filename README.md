@@ -1,5 +1,11 @@
 # Segmentation and visualization of encephalic structures using ITK and VTK
 
+
+
+https://github.com/goncaloffs/itk_encephalon_segmentation/assets/168077924/940b04da-b3b8-4072-a616-ca12ef6d6f82
+
+
+
 ## Description
 
 After the manual segmentation of different encephalic regions of the BraVa dataset (cng.gmu.edu/brava) using ITK-Snap, the following methods were applied to the obtained vtk file:
@@ -25,9 +31,13 @@ After the manual segmentation of different encephalic regions of the BraVa datas
 
 ![corte](https://github.com/goncaloffs/itk_encephalon_segmentation/assets/168077924/ca1b0981-8950-425c-b060-4d9f6cbe4c3b)
 
+
 - Opacity variation (with focus on the pons)
 
 ![opaco](https://github.com/goncaloffs/itk_encephalon_segmentation/assets/168077924/53c2fbae-9971-4258-988f-ab954f40b636)
 
+## Your approach
 
+I am making available my own segmentation files and the used code files (on a more simpler way).
+Try to use your own .vtk segmentation file, I hope my code helps you!!
 
