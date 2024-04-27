@@ -2,7 +2,9 @@
 
 
 
-https://github.com/goncaloffs/itk_encephalon_segmentation/assets/168077924/940b04da-b3b8-4072-a616-ca12ef6d6f82
+
+https://github.com/goncaloffs/itk_encephalon_segmentation/assets/168077924/ad462bd9-a1d7-4b29-b54b-a8021d791575
+
 
 
 
@@ -38,6 +40,6 @@ After the manual segmentation of different encephalic regions (Brain, Cerebelum,
 
 ## Your own approach
 
-I am making available my own segmentation files and the used python code files (on a more simpler way).
-Try to use your own .vtk segmentation file, I hope my code helps you!!
+I am making available my own segmentation files and the used python code files.
+Try to use your own .vtk segmentation files, I hope my code helps you!!
 
