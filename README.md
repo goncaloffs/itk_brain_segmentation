@@ -11,4 +11,23 @@ After the manual segmentation of different encephalic regions of the BraVa datas
 - Smooth Filter: reduces the surface irregularity generated in the previous step.
 
 ### 3D Visualization
-- Structures selection: 
+- Structures selection: allow the user to choose which structures he wants to view;
+- Clipping: cutting the brain and cerebellum in the sagittal plane facilitates the visualization of brain structures located more internally;
+- Variation in opacity: allows to focus on the location of certain structures;
+
+### Results :)
+
+- Exploded view of all the encephalic structures used:
+
+![explode](https://github.com/goncaloffs/itk_encephalon_segmentation/assets/168077924/6d11d6f3-d2bd-461c-b736-e28c65d5cf80)
+
+- Clipped meshes:
+
+![corte](https://github.com/goncaloffs/itk_encephalon_segmentation/assets/168077924/ca1b0981-8950-425c-b060-4d9f6cbe4c3b)
+
+- Opacity variation (with focus on the pons)
+
+![opaco](https://github.com/goncaloffs/itk_encephalon_segmentation/assets/168077924/53c2fbae-9971-4258-988f-ab954f40b636)
+
+
+
