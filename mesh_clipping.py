@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""
-Created on Sat Jun  3 01:06:13 2023
-
-@author: PC
-"""
+# CLIPPING
 
 import itk
 import os
@@ -162,7 +158,8 @@ def render_mesh_files():
         
         # Create a mapper for the clipped geometry
         mapper = vtk.vtkPolyDataMapper()
-        
+
+        # Here, I clipped the brain and the cerebellum meshes with the respective label 1 and 2
         if label in [1, 2]:
             clipper.Update()
             mapper.SetInputConnection(clipper.GetOutputPort())
