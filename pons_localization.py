@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sat May 20 18:53:33 2023
+# OPACITY VARIATION
 
-@author: PC
-"""
 import itk
 import os
 import vtk
@@ -30,6 +27,7 @@ color_mapping = {
     '../output/%s_label12_mask.vtk' % dataset: (1.0, 0.416, 0.592)   # 4th Ventricle-> light pink
 }
 
+# Here you can change the opacity numbers from 0 to 1 for each structure 
 opacity_mapping = {
     '../output/%s_label1_mask.vtk' % dataset: 0.1,  #Cerebrum
     '../output/%s_label2_mask.vtk' % dataset: 0.1,  # Cerebellum
