@@ -36,7 +36,7 @@ After the manual segmentation of different encephalic regions (Brain, Cerebelum,
 
 ![opaco](https://github.com/goncaloffs/itk_encephalon_segmentation/assets/168077924/53c2fbae-9971-4258-988f-ab954f40b636)
 
-## Your approach
+## Your own approach
 
 I am making available my own segmentation files and the used python code files (on a more simpler way).
 Try to use your own .vtk segmentation file, I hope my code helps you!!
