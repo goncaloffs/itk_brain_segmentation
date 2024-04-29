@@ -40,6 +40,6 @@ After the manual segmentation of different encephalic regions (Brain, Cerebelum,
 
 ## Your own approach
 
-I am making available my own segmentation files and the used python code files.
-Try to use your own .vtk segmentation files, I hope my code helps you!!
+This repository includes the python code and the .vtk file of the manual segmentations I did on ITK-Snap.
+Try to use your own .vtk segmentation files and modify my code as you wish.
 
