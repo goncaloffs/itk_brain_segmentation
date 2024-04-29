@@ -23,7 +23,7 @@ After the manual segmentation of different encephalic regions (Brain, Cerebelum,
 - Clipping: cutting the brain and cerebellum in the sagittal plane facilitates the visualization of brain structures located more internally;
 - Variation in opacity: allows to focus on the location of certain structures;
 
-### Results :)
+### Results
 
 - Exploded view of all the encephalic structures used:
 
